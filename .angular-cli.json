@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "myapp"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets"
+      ],
+      "index": "index.html",
+      "main": "app/main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "testTsconfig": "tsconfig.spec.json"
+    }
+  ],
+  "test": {
+    "codeCoverage": {
+      "exclude": [
+        "src/polyfills.ts",
+        "**/test.ts"
+      ]
+    },
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  }
+}
